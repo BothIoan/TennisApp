@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layer_presentation.Controller.ControllerUpdateMatch">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <SplitMenuButton fx:id="chooseMatchButton" layoutX="472.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressButton" text="Select">
+              <items>
+              </items>
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </SplitMenuButton>
+            <Label layoutX="22.0" layoutY="32.0" text="Select Match">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreSetsLabel" layoutX="376.0" layoutY="116.0" text="MatchScore:" />
+            <ButtonBar fx:id="set5Full" layoutX="276.0" layoutY="346.0" prefHeight="40.0" prefWidth="200.0" visible="false">
+              <buttons>
+                  <Label fx:id="set5" text="Set5: " />
+                <Button mnemonicParsing="false" onAction="#displaySet5" text="+" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar fx:id="set4Full" layoutX="276.0" layoutY="306.0" prefHeight="40.0" prefWidth="200.0" visible="false">
+              <buttons>
+                  <Label fx:id="set4" text="Set4:" />
+                <Button mnemonicParsing="false" onAction="#displaySet4" text="+" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar fx:id="set3Full" layoutX="276.0" layoutY="266.0" prefHeight="40.0" prefWidth="200.0" visible="false">
+              <buttons>
+                  <Label fx:id="set3" text="Set3: " />
+                <Button mnemonicParsing="false" onAction="#displaySet3" text="+" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar fx:id="set2Full" layoutX="276.0" layoutY="226.0" prefHeight="40.0" prefWidth="200.0" visible="false">
+              <buttons>
+                  <Label fx:id="set2" text="Set2: " />
+                <Button mnemonicParsing="false" onAction="#displaySet2" text="+" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar fx:id="set1Full" layoutX="276.0" layoutY="186.0" prefHeight="40.0" prefWidth="200.0" visible="false">
+              <buttons>
+                  <Label fx:id="set1" text="Set1: " />
+                <Button mnemonicParsing="false" onAction="#displaySet1" text="+" />
+              </buttons>
+            </ButtonBar>
+            <Label fx:id="MatchName" layoutX="103.0" layoutY="198.0" textAlignment="JUSTIFY" />
+            <Button fx:id="updateButton" layoutX="311.0" layoutY="13.0" mnemonicParsing="false" text="Update">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

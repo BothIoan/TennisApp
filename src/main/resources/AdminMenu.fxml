@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layer_presentation.Controller.ControllerAdminMenu">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="193.0" layoutY="48.0" text="Admin Console">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Button layoutX="79.0" layoutY="174.0" mnemonicParsing="false" text="Read Player   " onAction="#readPlayer"/>
+            <Button layoutX="79.0" layoutY="148.0" mnemonicParsing="false" text="Add Player     " onAction="#addPlayer"/>
+            <Button layoutX="79.0" layoutY="200.0" mnemonicParsing="false" text="Update Player" onAction="#updatePlayer"/>
+            <Button layoutX="79.0" layoutY="226.0" mnemonicParsing="false" text="Delete Player " onAction="#deletePlayer"/>
+            <Button layoutX="417.0" layoutY="148.0" mnemonicParsing="false" text="Add Match     " onAction="#addMatch"/>
+            <Button layoutX="417.0" layoutY="200.0" mnemonicParsing="false" text="Update Match" onAction="#updateMatch"/>
+            <Button layoutX="417.0" layoutY="174.0" mnemonicParsing="false" text="Read Match" onAction="#readMatch"/>
+            <Button layoutX="417.0" layoutY="226.0" mnemonicParsing="false" text="Delete Match "  onAction="#deleteMatch"/>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

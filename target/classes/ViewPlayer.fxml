@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layer_presentation.Controller.ControllerViewPlayer" >
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="227.0" layoutY="14.0" text="Choose Player">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="103.0" text="name:" />
+            <Label layoutX="77.0" layoutY="153.0" text="mail:" />
+            <Label layoutX="77.0" layoutY="200.0" text="password:" />
+            <Label fx:id="name" layoutX="209.0" layoutY="95.0" text="" />
+            <Label fx:id="mail" layoutX="209.0" layoutY="153.0" text="" />
+            <Label fx:id="password" layoutX="209.0" layoutY="200.0" text="" />
+            <MenuButton fx:id="choosePlayer" layoutX="461.0" layoutY="90.0" mnemonicParsing="false" text="ChoosePlayer">
+              <items>
+              </items>
+            </MenuButton>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

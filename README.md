@@ -11,4 +11,4 @@
 ## Functionalities
    * Two types of users
    * Crud on multiple elements of the app
-   * Implemented in the bussines layer a system that keeps track of the score by the rules of tennis. This system is tested to some extent through unit tests. It also won't allow scores that don't follow the rules, to be loaded (from the DB, or from an update forced by the Admin user).
+   * Implemented in the bussines layer a system that keeps track of the score by the rules of tennis. This system is tested to some extent through unit tests. It won't allow scores that don't follow the rules, to be loaded (from the DB, or from an update forced by the Admin user).
